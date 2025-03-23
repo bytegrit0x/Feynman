@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-quantum-dark text-quantum-light;
+}
+
+h1 {
+  @apply text-4xl font-bold text-feynman-red;
+}
+
+h2 {
+  @apply text-2xl font-semibold text-quantum-light;
+}
+
+h3 {
+  @apply text-xl font-semibold text-quantum-light;
+}
+
+a {
+  @apply text-quantum-teal hover:text-feynman-red transition-colors;
+}
+
+button {
+  @apply px-4 py-2 bg-quantum-blue text-white rounded 
+         hover:bg-quantum-purple transition-colors;
+}
+
+.card {
+  @apply bg-quantum-gray rounded-lg shadow-lg overflow-hidden border border-quantum-teal/30;
+}
