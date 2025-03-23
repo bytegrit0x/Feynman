@@ -1,0 +1,12 @@
+# Cloudflare Workers configuration
+name = "feynman-lectures-visualization"
+main = "./.cloudflare/worker.js"
+compatibility_date = "2023-11-21"
+
+[site]
+bucket = "./build"
+include = ["static/images/**/*"]
+
+[build]
+command = "npm run build"
+cwd = "."
